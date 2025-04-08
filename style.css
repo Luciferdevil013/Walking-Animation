@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+main{
+    width: 100%;
+    /* height: 100%; */
+    background-color: black;
+}
+
+
+.fading-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(-180deg, #000000e6 10%, #0000);
+    z-index: 100;
+    pointer-events: none
+}
+
+.fading-div-last {
+    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0
+}
+
+.long-div-for-scroll {
+    height: 500px
+}
+
+.element {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.inner-element {
+    display: flex;
+    height: 650vw;
+    margin: auto;
+    width: 100vw;
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    overflow: visible;
+    position: relative
+}
+
+.first-svg-container {
+    position: absolute;
+    overflow: visible;
+    visibility: visible;
+    transform-style: preserve-3d
+}
+
+:root {
+    --factor: calc(59.35vw / 810)
+}
+
+#first-svg {
+    width: calc(810.757 * var(--factor));
+    height: calc(136.224 * var(--factor));
+    transform: translate3d(calc(.7155 * var(--factor)), calc(1.9431 * var(--factor)), 0)
+}
+
+.second-svg-container {
+    position: absolute;
+    overflow: visible;
+    visibility: visible;
+    transform-style: preserve-3d;
+    width: calc(548.732 * var(--factor));
+    height: calc(559.406 * var(--factor));
+    transform: translate3d(calc(811.729 * var(--factor)), calc(138.167 * var(--factor)), 0)
+}
+
+.third-svg-container {
+    transform-style: preserve-3d;
+    visibility: visible;
+    width: calc(417.087 * var(--factor));
+    height: calc(607.336 * var(--factor));
+    transform: translate3d(calc(1360.46 * var(--factor)), calc(697.572 * var(--factor)), 0)
+}
+
+.fourth-svg-container {
+    transform-style: preserve-3d;
+    visibility: visible;
+    position: absolute;
+    width: calc(603.819 * var(--factor));
+    height: calc(505.673 * var(--factor));
+    transform: translate3d(calc(943.375 * var(--factor)), calc(1304.91 * var(--factor)), 0)
+}
+
+.fifth-svg-container {
+    visibility: visible;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: calc(12.2765 * var(--factor));
+    height: calc(803.374 * var(--factor));
+    transform: translate3d(calc(339.557 * var(--factor)), calc(1810.58 * var(--factor)), 0)
+}
+
+.sixth-svg-container {
+    width: 17.2554px;
+    height: 1129.19px;
+    visibility: visible;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: calc(597.15 * var(--factor));
+    height: calc(502.282 * var(--factor));
+    transform: translate3d(calc(327.28 * var(--factor)), calc(2613.96 * var(--factor)), 0)
+}
+
+.seventh-svg-container {
+    visibility: visible;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: calc(28.1526 * var(--factor));
+    height: calc(776.28 * var(--factor));
+    transform: translate3d(calc(924.43 * var(--factor)), calc(3116.24 * var(--factor)), 0)
+}
+
+.eighth-svg-container {
+    visibility: visible;
+    width: 597.411px;
+    height: 863.727px;
+    transform: translate3d(1338.92px, 5471.18px, 0);
+    position: absolute;
+    transform-style: preserve-3d;
+    width: calc(425.033 * var(--factor));
+    height: calc(614.505 * var(--factor));
+    transform: translate3d(calc(952.584 * var(--factor)), calc(3892.52 * var(--factor)), 0)
+}
